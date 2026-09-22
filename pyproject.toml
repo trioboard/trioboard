@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "trioboard"
-version = "0.0.1"
+version = "0.1.0"
 description = "Three coding agents, one folder of plain text files. Claude Code, Codex CLI and Antigravity CLI as a team in your own terminals."
 readme = "README.md"
 license = { text = "MIT" }
@@ -15,6 +15,10 @@ classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :
 
 [project.urls]
 Homepage = "https://trioboard.com"
+Source = "https://github.com/trioboard/trioboard"
 
 [project.scripts]
 trio = "trioboard.cli:main"
+
+[tool.setuptools]
+packages = ["trioboard"]
