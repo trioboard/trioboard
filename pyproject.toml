@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trioboard"
+version = "0.0.1"
+description = "Three coding agents, one folder of plain text files. Claude Code, Codex CLI and Antigravity CLI as a team in your own terminals."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "trioboard contributors" }]
+keywords = ["claude-code", "codex", "antigravity-cli", "agents", "mcp"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: MacOS", "Operating System :: POSIX :: Linux"]
+
+[project.urls]
+Homepage = "https://trioboard.com"
+
+[project.scripts]
+trio = "trioboard.cli:main"
